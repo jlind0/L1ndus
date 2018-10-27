@@ -1,0 +1,253 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-L1ndus.ColabPub.Web-FCC0347C-C4D4-4595-ACB6-D3179D85D17F</UserSecretsId>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\node_modules\parchment\dist\src\**" />
+    <Content Remove="wwwroot\node_modules\parchment\dist\src\**" />
+    <EmbeddedResource Remove="wwwroot\node_modules\parchment\dist\src\**" />
+    <None Remove="wwwroot\node_modules\parchment\dist\src\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\node_modules\clone\.npmignore" />
+    <Content Include="wwwroot\node_modules\clone\clone.iml" />
+    <Content Include="wwwroot\node_modules\clone\clone.js" />
+    <Content Include="wwwroot\node_modules\clone\LICENSE" />
+    <Content Include="wwwroot\node_modules\clone\package.json" />
+    <Content Include="wwwroot\node_modules\clone\README.md" />
+    <Content Include="wwwroot\node_modules\deep-equal\.travis.yml" />
+    <Content Include="wwwroot\node_modules\deep-equal\example\cmp.js" />
+    <Content Include="wwwroot\node_modules\deep-equal\index.js" />
+    <Content Include="wwwroot\node_modules\deep-equal\lib\is_arguments.js" />
+    <Content Include="wwwroot\node_modules\deep-equal\lib\keys.js" />
+    <Content Include="wwwroot\node_modules\deep-equal\LICENSE" />
+    <Content Include="wwwroot\node_modules\deep-equal\package.json" />
+    <Content Include="wwwroot\node_modules\deep-equal\readme.markdown" />
+    <Content Include="wwwroot\node_modules\deep-equal\test\cmp.js" />
+    <Content Include="wwwroot\node_modules\eventemitter3\index.d.ts" />
+    <Content Include="wwwroot\node_modules\eventemitter3\index.js" />
+    <Content Include="wwwroot\node_modules\eventemitter3\LICENSE" />
+    <Content Include="wwwroot\node_modules\eventemitter3\package.json" />
+    <Content Include="wwwroot\node_modules\eventemitter3\README.md" />
+    <Content Include="wwwroot\node_modules\eventemitter3\umd\eventemitter3.min.js" />
+    <Content Include="wwwroot\node_modules\extend\.editorconfig" />
+    <Content Include="wwwroot\node_modules\extend\.eslintrc" />
+    <Content Include="wwwroot\node_modules\extend\.jscs.json" />
+    <Content Include="wwwroot\node_modules\extend\.travis.yml" />
+    <Content Include="wwwroot\node_modules\extend\CHANGELOG.md" />
+    <Content Include="wwwroot\node_modules\extend\component.json" />
+    <Content Include="wwwroot\node_modules\extend\index.js" />
+    <Content Include="wwwroot\node_modules\extend\LICENSE" />
+    <Content Include="wwwroot\node_modules\extend\package.json" />
+    <Content Include="wwwroot\node_modules\extend\README.md" />
+    <Content Include="wwwroot\node_modules\fast-diff\.travis.yml" />
+    <Content Include="wwwroot\node_modules\fast-diff\diff.js" />
+    <Content Include="wwwroot\node_modules\fast-diff\package.json" />
+    <Content Include="wwwroot\node_modules\fast-diff\README.md" />
+    <Content Include="wwwroot\node_modules\fast-diff\test.js" />
+    <Content Include="wwwroot\node_modules\parchment\dist\parchment.js" />
+    <Content Include="wwwroot\node_modules\parchment\dist\parchment.js.map" />
+    <Content Include="wwwroot\node_modules\parchment\LICENSE" />
+    <Content Include="wwwroot\node_modules\parchment\package.json" />
+    <Content Include="wwwroot\node_modules\parchment\README.md" />
+    <Content Include="wwwroot\node_modules\parchment\src\attributor\attributor.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\attributor\class.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\attributor\store.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\attributor\style.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\abstract\blot.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\abstract\container.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\abstract\format.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\abstract\leaf.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\abstract\shadow.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\block.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\embed.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\inline.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\scroll.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\blot\text.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\collection\linked-list.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\collection\linked-node.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\parchment.ts" />
+    <Content Include="wwwroot\node_modules\parchment\src\registry.ts" />
+    <Content Include="wwwroot\node_modules\parchment\tsconfig.json" />
+    <Content Include="wwwroot\node_modules\quill-delta\.travis.yml" />
+    <Content Include="wwwroot\node_modules\quill-delta\CHANGELOG.md" />
+    <Content Include="wwwroot\node_modules\quill-delta\lib\delta.js" />
+    <Content Include="wwwroot\node_modules\quill-delta\lib\op.js" />
+    <Content Include="wwwroot\node_modules\quill-delta\LICENSE" />
+    <Content Include="wwwroot\node_modules\quill-delta\package.json" />
+    <Content Include="wwwroot\node_modules\quill-delta\README.md" />
+    <Content Include="wwwroot\node_modules\quill-delta\test\attributes.js" />
+    <Content Include="wwwroot\node_modules\quill-delta\test\delta\builder.js" />
+    <Content Include="wwwroot\node_modules\quill-delta\test\delta\compose.js" />
+    <Content Include="wwwroot\node_modules\quill-delta\test\delta\diff.js" />
+    <Content Include="wwwroot\node_modules\quill-delta\test\delta\helpers.js" />
+    <Content Include="wwwroot\node_modules\quill-delta\test\delta\transform-position.js" />
+    <Content Include="wwwroot\node_modules\quill-delta\test\delta\transform.js" />
+    <Content Include="wwwroot\node_modules\quill-delta\test\op.js" />
+    <Content Include="wwwroot\node_modules\quill\assets\.DS_Store" />
+    <Content Include="wwwroot\node_modules\quill\assets\base.styl" />
+    <Content Include="wwwroot\node_modules\quill\assets\bubble.styl" />
+    <Content Include="wwwroot\node_modules\quill\assets\bubble\toolbar.styl" />
+    <Content Include="wwwroot\node_modules\quill\assets\bubble\tooltip.styl" />
+    <Content Include="wwwroot\node_modules\quill\assets\core.styl" />
+    <Content Include="wwwroot\node_modules\quill\assets\favicon.png" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\.DS_Store" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\align-center.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\align-justify.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\align-left.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\align-right.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\attachment.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\audio.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\authorship.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\background.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\blockquote.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\bold.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\clean.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\code.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\color.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\comment.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\direction-ltr.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\direction-rtl.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\dropdown.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\embed.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\emoji.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\float-center.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\float-full.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\float-left.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\float-right.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\font.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\formula.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\hashtag.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\header-2.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\header-3.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\header-4.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\header-5.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\header-6.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\header.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\horizontal-rule.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\image.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\indent.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\italic.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\link.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\list-bullet.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\list-check.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\list-ordered.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\map.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\mention.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\more.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\outdent.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\redo.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\size-decrease.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\size-increase.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\size.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\spacing.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\speech.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\strike.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\subscript.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\superscript.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-border-all.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-border-bottom.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-border-left.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-border-none.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-border-outside.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-border-right.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-border-top.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-delete-cells.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-delete-columns.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-delete-rows.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-insert-cells.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-insert-columns.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-insert-rows.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-merge-cells.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table-unmerge-cells.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\table.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\underline.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\undo.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\icons\video.svg" />
+    <Content Include="wwwroot\node_modules\quill\assets\snow.styl" />
+    <Content Include="wwwroot\node_modules\quill\assets\snow\toolbar.styl" />
+    <Content Include="wwwroot\node_modules\quill\assets\snow\tooltip.styl" />
+    <Content Include="wwwroot\node_modules\quill\blots\block.js" />
+    <Content Include="wwwroot\node_modules\quill\blots\break.js" />
+    <Content Include="wwwroot\node_modules\quill\blots\container.js" />
+    <Content Include="wwwroot\node_modules\quill\blots\cursor.js" />
+    <Content Include="wwwroot\node_modules\quill\blots\embed.js" />
+    <Content Include="wwwroot\node_modules\quill\blots\inline.js" />
+    <Content Include="wwwroot\node_modules\quill\blots\scroll.js" />
+    <Content Include="wwwroot\node_modules\quill\blots\text.js" />
+    <Content Include="wwwroot\node_modules\quill\CHANGELOG.md" />
+    <Content Include="wwwroot\node_modules\quill\core.js" />
+    <Content Include="wwwroot\node_modules\quill\core\editor.js" />
+    <Content Include="wwwroot\node_modules\quill\core\emitter.js" />
+    <Content Include="wwwroot\node_modules\quill\core\logger.js" />
+    <Content Include="wwwroot\node_modules\quill\core\module.js" />
+    <Content Include="wwwroot\node_modules\quill\core\polyfill.js" />
+    <Content Include="wwwroot\node_modules\quill\core\quill.js" />
+    <Content Include="wwwroot\node_modules\quill\core\selection.js" />
+    <Content Include="wwwroot\node_modules\quill\core\theme.js" />
+    <Content Include="wwwroot\node_modules\quill\dist\quill.bubble.css" />
+    <Content Include="wwwroot\node_modules\quill\dist\quill.core.css" />
+    <Content Include="wwwroot\node_modules\quill\dist\quill.core.js" />
+    <Content Include="wwwroot\node_modules\quill\dist\quill.js" />
+    <Content Include="wwwroot\node_modules\quill\dist\quill.min.js" />
+    <Content Include="wwwroot\node_modules\quill\dist\quill.min.js.map" />
+    <Content Include="wwwroot\node_modules\quill\dist\quill.snow.css" />
+    <Content Include="wwwroot\node_modules\quill\formats\align.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\background.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\blockquote.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\bold.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\code.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\color.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\direction.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\font.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\header.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\image.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\indent.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\italic.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\link.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\list.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\script.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\size.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\strike.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\underline.js" />
+    <Content Include="wwwroot\node_modules\quill\formats\video.js" />
+    <Content Include="wwwroot\node_modules\quill\LICENSE" />
+    <Content Include="wwwroot\node_modules\quill\modules\clipboard.js" />
+    <Content Include="wwwroot\node_modules\quill\modules\formula.js" />
+    <Content Include="wwwroot\node_modules\quill\modules\history.js" />
+    <Content Include="wwwroot\node_modules\quill\modules\keyboard.js" />
+    <Content Include="wwwroot\node_modules\quill\modules\syntax.js" />
+    <Content Include="wwwroot\node_modules\quill\modules\toolbar.js" />
+    <Content Include="wwwroot\node_modules\quill\package.json" />
+    <Content Include="wwwroot\node_modules\quill\quill.js" />
+    <Content Include="wwwroot\node_modules\quill\README.md" />
+    <Content Include="wwwroot\node_modules\quill\themes\base.js" />
+    <Content Include="wwwroot\node_modules\quill\themes\bubble.js" />
+    <Content Include="wwwroot\node_modules\quill\themes\snow.js" />
+    <Content Include="wwwroot\node_modules\quill\ui\color-picker.js" />
+    <Content Include="wwwroot\node_modules\quill\ui\icon-picker.js" />
+    <Content Include="wwwroot\node_modules\quill\ui\icons.js" />
+    <Content Include="wwwroot\node_modules\quill\ui\picker.js" />
+    <Content Include="wwwroot\node_modules\quill\ui\tooltip.js" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AspNet.Security.OAuth.LinkedIn" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+</Project>
